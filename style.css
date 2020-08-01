@@ -1,26 +1,29 @@
-body{
+body {
     font-family: 'Open Sans', sans-serif;
+    /*overflow-x:hidden;*/
+    margin: 0;
+    padding: 0;
 }
 
-.navbar{
-    background-color: #efeed4;
+.navbar {
+    background-color: #dbd7d4;
     position: inherit;
 }
 
-.navbar-nav{
+.navbar-nav {
     margin-top: 30px;
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #fff;
+    color: #ffffff;
     font-weight: 600;
     font-size: 14px;
     transition: 0.3s linear;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-     color: #fff;
- }
+    color: #fff;
+}
 
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 20px;
@@ -42,13 +45,81 @@ body{
     order: 2;
 }
 
-.about-us{
-    background-color: #efeed4;
-    height: 600px;
+.about-us {
+    background-color: #dbd7d4;
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
+
+.music-school h4 {
+    margin-top: 70px;
+    font-size: 42px;
+    text-align: left;
+    font-weight: 100;
+    padding-left: 50px;
+    color: #2c3258;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.music-school p {
+    text-align: left;
+    font-weight: 100;
+    padding-left: 50px;
+    margin-top: 15px;
+    color: #2c3258;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.woman img {
+    height: 454px;
+    width: 412px;
+}
+
+.woman p {
+    text-align: center;
+}
+
+.piano img {
+    margin-top: 90px;
+    height: 290px;
+    padding-left: 20px;
+}
+
+.btn-main {
+    background-color: #e4b61a;
+    padding: 15px 45px;
+    border: none;
+    outline: none;
+    margin-left: 50px;
+    margin-top: 30px;
+    color: #fff;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.btn-main:focus {
+    outline: none;
+    border: none;
+}
+
+.details {
+    color: #AB9139;
+    margin-left: 25px;
+    font-size: 14px;
+}
+
+.details img {
+    width: 70px;
+}
+
+.details:hover {
+    color: #AB9139;
+    text-decoration: none;
 }
 
 .navbar-brand {
-        display: none;
+    display: none;
 }
 
 .navbar-collapse {
@@ -61,6 +132,7 @@ body{
     bottom: 0;
     display: block;
     transition: right .35s ease;
+    z-index: 5;
 }
 
 .show {
@@ -68,7 +140,7 @@ body{
     display: block;
 }
 
-.navbar-light .navbar-toggler{
+.navbar-light .navbar-toggler {
     color: #fff;
     float: right;
     outline: none;
@@ -85,39 +157,99 @@ body{
 }
 
 .navbar-light .navbar-toggler {
-     border: none;
+    border: none;
 }
 
-.row{
+.row-footer {
     height: 300px;
-    background-color: #efeed4;
+    background-color: #dbd7d4;
 }
 
-.mobile, .social, .web-studio{
+.mobile, .social, .web-studio {
     display: inline-block;
 }
 
-.phone{
+.phone {
     margin-top: 40px;
 }
 
-.mobile a{
+.mobile a {
     display: block;
-    color: black;
+    color: #2c3258;
     padding-left: 30px;
 }
 
-.mobile a:hover{
-    color: black;
+.mobile a:hover {
+    color: #2c3258;
     display: block;
     padding-left: 30px;
     text-decoration: none;
 }
 
-.vocal{
-    background-color: #ffffff;
-    height: 400px;
+.mission {
+    background-color: #eaebef;
+    padding: 130px 0;
 }
+
+.mission h3{
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.7;
+    text-align: center;
+    color: #2c3258;
+    margin: 0 auto;
+}
+
+.mission .fa-quote-left, .mission .fa-quote-right{
+    color: #dbd7d4;
+    font-size: 30px;
+    display: block;
+}
+
+.mission .fa-quote-left{
+    margin-left: 13%;
+    margin-bottom: -10px;
+}
+
+.mission .fa-quote-right{
+    margin-left: 87%;
+    margin-top: -10px;
+}
+
+.first-lesson{
+    background-color: #eaebef;
+}
+
+.first-lesson p{
+    text-align: right;
+}
+
+.photo-first-lesson img{
+    width: 560px;
+    text-align: right;
+}
+
+.about-first-lesson p{
+    text-align: left;
+    font-weight: 100;
+    padding-left: 50px;
+    margin-top: 15px;
+    color: #2c3258;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.65;
+}
+
+.description{
+    background-color: #eaebef;
+    z-index: 2;
+    margin-left: -124px;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 
 .social {
     text-align: center;
@@ -125,7 +257,7 @@ body{
     padding-top: 50px;
 }
 
-.social i{
+.social i {
     height: 40px;
     width: 40px;
     vertical-align: top;
@@ -147,19 +279,33 @@ body{
     fill: #000000;
 }
 
-.web-studio p{
+.web-studio p {
     display: inline-block;
     margin-top: 55px;
     padding: 0 30px;
+    color: #2c3258;
 }
 
-.footer{
+.footer {
     text-align: center;
 }
 
+/*new arrow   */
+.arrow-container {
+    overflow: hidden;
+    display: inline-block;
+    line-height: 14px;
+}
 
+.arrow-container img {
+    position: relative;
+    left: -30px;
+    transition: left .5s ease;
+}
 
-
+.details:hover .arrow-container img {
+    left: 0;
+}
 
 /*Extra small devices (portrait phones, less than 576px)*/
 /*No media query for `xs` since this is the default in Bootstrap*/
@@ -170,21 +316,18 @@ body{
 }
 
 /* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {  }
+@media (min-width: 768px) {
+}
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
 
-    .navbar-brand {
+    .navbar-light .navbar-brand {
         display: block;
     }
 
     .navbar-collapse {
         background-color: transparent;
-    }
-
-    .navbar-light .navbar-nav .nav-link {
-        color: #000;
     }
 
     .navbar-collapse {
@@ -194,41 +337,45 @@ body{
     .navbar-expand-lg .navbar-nav .nav-link {
         font-size: 14px;
         font-weight: 600;
+        margin-top: 10px;
     }
 
-    .navbar-nav{
+    .navbar-nav {
         margin-top: 0px;
     }
 
-    .navbar-light .navbar-nav .nav-link:hover {
-        color: #5E565A;
+    .navbar-light .navbar-nav .nav-link {
+        color: #2c3258;
     }
 
     .navbar-light .navbar-nav .nav-link:focus {
         color: #000000;
     }
 
-    .navbar-light .navbar-nav .nav-link:hover{
-        color: #5E565A;
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: #9b9183;
     }
 
-    .row {
+    .row-footer {
         height: 150px;
     }
 
-    .footer{
+    .footer {
         text-align: center;
     }
 
-    .web-studio{
+    .web-studio {
         text-align: right;
     }
 
     .mobile a {
         text-align: left;
     }
+
+
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {  }
+@media (min-width: 1200px) {
+}
 
