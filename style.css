@@ -488,16 +488,14 @@ body {
 
 .main-form form{
     z-index: 1;
-    width: 900px;
+    width: 100%;
     height: 600px;
     background-color: #dbd7d4;
     position: absolute;
-    top: 150px;
-    left: 15%;
 }
 
 .main-form ul{
-    padding: 50px 90px;
+    padding: 30px 30px;
 }
 
 .forms h3, .forms p{
@@ -506,7 +504,7 @@ body {
 
 .forms h3{
     color: #2c3258;
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'Playfair Display',serif;
     line-height: 1.43;
     font-weight: 500;
@@ -518,7 +516,7 @@ body {
     font-family: 'Open Sans',Arial,sans-serif;
     line-height: 1.52;
     font-weight: 100;
-    margin-left: 100px;
+    margin-left: 150px;
 }
 
 .forms li{
@@ -846,6 +844,41 @@ body {
         width: 575px;
         height: 421px;
         overflow: hidden;
+    }
+
+    .main-form form{
+        z-index: 1;
+        width: 900px;
+        height: 600px;
+        background-color: #dbd7d4;
+        position: absolute;
+        top: 150px;
+        left: 15%;
+    }
+
+    .main-form ul{
+        padding: 50px 90px;
+    }
+
+    .forms h3{
+        color: #2c3258;
+        font-size: 30px;
+        font-family: 'Playfair Display',serif;
+        line-height: 1.43;
+        font-weight: 500;
+    }
+
+    .forms p{
+        color: #2c3258;
+        font-size: 16px;
+        font-family: 'Open Sans',Arial,sans-serif;
+        line-height: 1.52;
+        font-weight: 100;
+        margin-left: 100px;
+    }
+
+    .forms h3, .forms p{
+        display: inline-block;
     }
 
 
