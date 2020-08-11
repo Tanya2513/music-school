@@ -5,6 +5,10 @@ body {
     padding: 0;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 .navbar {
     background-color: #dbd7d4;
     position: inherit;
@@ -64,7 +68,7 @@ body {
 .music-school p {
     text-align: left;
     font-weight: 100;
-    padding-left: 50px;
+    padding-left: 5%;
     margin-top: 15px;
     color: #2c3258;
     font-size: 18px;
@@ -72,8 +76,7 @@ body {
 }
 
 .main-photo img {
-    height: 454px;
-    width: 412px;
+    max-width: 100%;
 }
 
 .main-photo p {
@@ -91,7 +94,7 @@ body {
     padding: 15px 45px;
     border: none;
     outline: none;
-    margin-left: 50px;
+    margin-left: 5%;
     margin-top: 30px;
     color: #fff;
     font-weight: 100;
@@ -111,7 +114,7 @@ body {
 
 .details {
     color: #AB9139;
-    margin-left: 25px;
+    margin-left: 10%;
     font-size: 14px;
 }
 
@@ -524,7 +527,7 @@ body {
     font-family: 'Open Sans', Arial, sans-serif;
     line-height: 1.52;
     font-weight: 100;
-    margin-left: 50px;
+    margin-left: 10%;
     max-width: 54%;
 }
 
@@ -542,7 +545,7 @@ body {
     font-weight: 100;
     font-size: 14px;
     transition: background-color 0.2s ease-in-out;
-    margin-top: 30px;
+    margin-top: 10%;
 }
 
 .forms button:focus {
@@ -716,8 +719,8 @@ body {
 }
 
 .staff img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 100px;
 
 }
@@ -1404,6 +1407,17 @@ body {
     .person {
         margin-left: 120px;
         margin-top: 140px;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .staff img {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+
     }
 
 
