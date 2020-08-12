@@ -22,7 +22,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                <button class="navbar-toggler navbar-toggler-cross" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     x
                 </button>
@@ -326,68 +326,84 @@
             </div>
         </div>
     </section>
-    <section class="container-fluid">
-        <div class="row our-services" id="services">
-            <div class="col-lg-4 photo-services">
+    <section class="container-fluid our-services">
+        <div class="row">
+            <div class="col">
                 <h1>Наши услуги</h1>
-                <img src="img/2.jpg">
+            </div>
+        </div>
+        <div class="row" id="services">
+            <div class="col-lg-4 photo-services">
+                <div class="service-photo d-none d-md-block"></div>
             </div>
             <div class="col-lg-8 text-services">
-                <div class="service-left">
-                    <div class="icon-services">
-                        <p>1</p>
+                <div class="row service-left">
+                    <div class="col-lg-2">
+                        <div class="icon-services">
+                            <p>1</p>
+                        </div>
                     </div>
-                    <div class="service-text-left">
+                    <div class="col-lg-10 service-text-left">
                         <h4>Встреча или общение в Skype</h4>
                         <p>Детально изучаем планировку вашего объекта, обсуждаем состав, сроки и стоимость проекта, а
                             также формируем общее виденье проекта.</p>
                     </div>
                 </div>
-                <div class="service-right">
-                    <div class="icon-services">
-                        <p>2</p>
+                <div class="row service-right">
+                    <div class="col-lg-2">
+                        <div class="icon-services">
+                            <p>2</p>
+                        </div>
                     </div>
-                    <div class="service-text-right">
+                    <div class="col-lg-10 service-text-right">
                         <h4>Подписание договора</h4>
                         <p>Прописываем все детали работы, фиксируем все пожелания и требования к проекту. Также на этом
                             этапе вносится предоплата 50%.</p>
                     </div>
                 </div>
-                <div class="service-left">
-                    <div class="icon-services">
-                        <p>3</p>
+                <div class="row service-left">
+                    <div class="col-lg-2">
+                        <div class="icon-services">
+                            <p>3</p>
+                        </div>
                     </div>
-                    <div class="service-text-left">
+                    <div class="col-lg-10 service-text-left">
                         <h4>Замеры объекта</h4>
                         <p>Выезд замерщика на обьект для точных замеров. Согласование обмерочных чертежей помещений с
                             указанием технических особенностей.</p>
                     </div>
                 </div>
-                <div class="service-right">
-                    <div class="icon-services">
-                        <p>4</p>
+                <div class="row service-right">
+                    <div class="col-lg-2">
+                        <div class="icon-services">
+                            <p>4</p>
+                        </div>
                     </div>
-                    <div class="service-text-right">
+                    <div class="col-lg-10 service-text-right">
                         <h4>Предварительная разработка планов помещения</h4>
                         <p>Предоставление нескольких вариантов. Предлагаем как функционально организовать пространство.
                             Согласовываем предварительную планировку</p>
                     </div>
                 </div>
-                <div class="service-left">
-                    <div class="icon-services">
-                        <p>5</p>
+                <div class="row service-left">
+                    <div class="col-lg-2">
+                        <div class="icon-services">
+                            <p>5</p>
+                        </div>
                     </div>
-                    <div class="service-text-left">
+                    <div class="col-lg-10 service-text-left">
                         <h4>Концептуальная работа</h4>
                         <p>Составление интерьера в виде коллажей.Подборка мебели, аксессуаров, света, материалов. Всего
                             создается 3 разных варианта подборки на выбор</p>
                     </div>
                 </div>
-                <div class="service-right">
-                    <div class="last-icon-circle">
-                        <p>6</p>
+                <div class="row service-right">
+                    <div class="col-lg-2">
+                        <div class="last-icon-circle">
+                            <p>6</p>
+                        </div>
                     </div>
-                    <div class="service-text-right">
+                    <div class="col-lg-10 service-text-right">
                         <h4>Работа с технической частью</h4>
                         <p>Возвращаемся к плану и делаем из него конечный план. Перенос в план реальных размеров мебели,
                             которые мы выбрали. Фиксируем конечный план и на него накладываем всю рабочую
@@ -434,7 +450,7 @@
     <section class="container-fluid">
         <div class="row recommendations" id="recommendations">
             <div class="for-recommend-carousel">
-                <div id="carousel-recommend" class="carousel slide" data-ride="carousel">
+                <div id="carousel-recommend" class="carousel slide">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="row feature-recommend">

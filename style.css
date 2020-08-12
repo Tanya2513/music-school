@@ -12,6 +12,7 @@ body {
 .navbar {
     background-color: #dbd7d4;
     position: inherit;
+    padding: 0;
 }
 
 .navbar-nav {
@@ -51,13 +52,13 @@ body {
 
 .about-us {
     background-color: #dbd7d4;
-    padding-top: 20px;
+    padding-top: 0;
     padding-bottom: 70px;
 }
 
 .music-school h4 {
-    margin-top: 70px;
-    font-size: 42px;
+    margin-top: 50px;
+    font-size: 27px;
     text-align: left;
     font-weight: 100;
     padding-left: 50px;
@@ -69,10 +70,16 @@ body {
     text-align: left;
     font-weight: 100;
     padding-left: 5%;
+    padding-right: 5%;
     margin-top: 15px;
     color: #2c3258;
-    font-size: 18px;
+    font-size: 15px;
     font-family: 'Open Sans', sans-serif;
+}
+
+.main-photo{
+    padding-right: 8px;
+    padding-left: 8px;
 }
 
 .main-photo img {
@@ -91,10 +98,10 @@ body {
 
 .btn-main {
     background-color: #e4b61a;
-    padding: 15px 45px;
+    padding: 15px 50px;
     border: none;
     outline: none;
-    margin-left: 5%;
+    margin-left: 31%;
     margin-top: 30px;
     color: #fff;
     font-weight: 100;
@@ -114,8 +121,10 @@ body {
 
 .details {
     color: #AB9139;
-    margin-left: 10%;
+    margin-left: 31%;
     font-size: 14px;
+    display: block;
+    margin-top: 45px;
 }
 
 .details img {
@@ -135,13 +144,13 @@ body {
     height: auto;
     right: -300px;
     width: 300px;
-    position: absolute;
+    position: fixed;
     top: 0;
     background-color: #000;
     bottom: 0;
     display: block;
     transition: right .35s ease;
-    z-index: 5;
+    z-index: 1000;
 }
 
 .show {
@@ -154,6 +163,15 @@ body {
     float: right;
     outline: none;
     font-size: 30px;
+    border: none;
+    position: fixed;
+    right: 0;
+    z-index: 10;
+    top: 0;
+}
+
+.navbar-light .navbar-toggler-cross{
+    position: initial;
 }
 
 .navbar-toggler {
@@ -165,8 +183,10 @@ body {
     padding: 0;
 }
 
-.navbar-light .navbar-toggler {
-    border: none;
+.navbar-light .navbar-toggler-icon{
+    background-color: #dbd7d4;
+    border-radius: 100%;
+    border: solid 7px #dbd7d4;
 }
 
 .row-footer {
@@ -601,7 +621,7 @@ body {
     background-color: #dbd7d4;
 }
 
-.photo-services h1 {
+.our-services h1 {
     font-size: 45px;
     font-family: 'Playfair Display', serif;
     line-height: 1.55;
@@ -610,12 +630,17 @@ body {
     margin-left: 50px;
 }
 
-.photo-services img {
-    display: none;
+
+.service-photo{
+    background-image: url(http://localhost:63342/vocal/img/2.jpg);
+    height: 100%;
+    background-color: #dbd7d4;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .text-services {
-    padding-top: 10px;
     overflow: scroll;
     height: 800px;
 }
@@ -636,7 +661,6 @@ body {
 
 .service-left {
     margin: 0 auto;
-    margin-top: 30px;
 }
 
 .service-text-left h4, .service-text-right h4 {
@@ -671,7 +695,6 @@ body {
     line-height: 1.55;
     font-weight: 400;
     color: #2c3258;
-    left: 24px;
 }
 
 .last-icon-circle {
@@ -1283,26 +1306,16 @@ body {
         display: inline-block;
     }
 
-    .photo-services img {
-        width: 98%;
-        height: 900px;
-        display: block;
-    }
-
     .service-right {
         margin-left: 50%;
     }
 
     .service-left {
-        margin-left: 20%;
+        margin-left: 10%;
     }
 
     .service-left, .service-right {
-        max-width: 300px;
-    }
-
-    .text-services {
-        padding-top: 100px;
+        max-width: 360px;
     }
 
     .icon-services {
@@ -1310,18 +1323,15 @@ body {
         height: 45px;
         border-radius: 40px;
         background-color: #e4b61a;
-        margin-left: -62px;
-        margin-bottom: -40px;
-        position: relative;
+        font-size: 42px;
+        text-indent: 31px;
+        line-height: 66px;
     }
 
     .last-icon-circle {
         width: 45px;
         height: 45px;
         border-radius: 40px;
-        margin-left: -62px;
-        margin-bottom: -40px;
-        position: relative;
         border: 6px solid #e4b61a;
     }
 
@@ -1419,6 +1429,66 @@ body {
         border-radius: 100px;
 
     }
+
+    .about-us {
+        background-color: #dbd7d4;
+        padding-top: 20px;
+        padding-bottom: 70px;
+    }
+
+    .navbar {
+        background-color: #dbd7d4;
+        position: inherit;
+        padding: .5rem 1rem;
+    }
+
+    .main-photo{
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .details {
+        color: #AB9139;
+        margin-left: 10%;
+        font-size: 14px;
+        display: inline-block;
+    }
+
+
+    .btn-main {
+        background-color: #e4b61a;
+        padding: 15px 48px;
+        border: none;
+        outline: none;
+        margin-left: 5%;
+        margin-top: 30px;
+        color: #fff;
+        font-weight: 100;
+        font-size: 14px;
+        transition: background-color 0.2s ease-in-out;
+        text-align: center;
+    }
+
+    .music-school p {
+        text-align: left;
+        font-weight: 100;
+        padding-left: 5%;
+        margin-top: 15px;
+        color: #2c3258;
+        font-size: 18px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .music-school h4 {
+        margin-top: 70px;
+        font-size: 42px;
+        text-align: left;
+        font-weight: 100;
+        padding-left: 50px;
+        color: #2c3258;
+        font-family: 'Open Sans', sans-serif;
+    }
+
 
 
 }
